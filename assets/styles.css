@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /*border: black 1px solid;*/
+}
+
+@font-face {
+  font-family: baar;
+  src:url('fonts/baar.TTF');
+}
+
+@@font-face {
+  font-family: ecologica;
+  src: url('fonts/ecologica.ttf');
+}
+:root {
+  --lightgreen-color: #8CFF19;
+  --white-color: #F4FFEA;
+  --lightblue-color: #2DFFD8;
+  --strawberry-color: #F92F2F;
+  --brownbrown-color: #0D110B;
+  --greenblue-color: #00C9BB;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightgreen-color);
+  height: 30px;
+  font-family: baar;
+  font-weight: bold;
+  color: var(--brownbrown-color);
+}
+
+.ln {
+  margin-right: 25px;
+}
+.whatsApp {
+  margin-left: 3px;
+  width: 25px;
+  height: 25px;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header picture .lifestyle {
+  width: 150px;
+  height: 100px;
+}
+
+.screenMax {
+  display: flex;
+  list-style: none;
+}
+.style {
+  font-family: ecologica;
+  color: var(--greenblue-color);
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 100px;
+}
+
+h3 {
+  font-family: ecologica;
+  color: var(--greenblue-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.style:hover {
+  cursor: pointer;
+}
+
+.screenMobile {
+  display: none;
+}
+
+.menuIcon {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+.menuIcon:hover {
+  cursor: pointer;
+}
+
+.menuMobile {
+  display: none;
+}
+
+.menu-screenMobile {
+  display: block;
+  width: fit-content;
+  background-color: var(--greenblue-color);
+}
+
+h4.close.menuDesplegable {
+  text-align: right;
+}
+.menuDesplegable{
+  color: var(--white-color);
+  font-style: ecologica;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+form {
+  display: flex;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  nav {
+    background-color: var(--lightgreen-color);
+  }
+  .screenMax {
+    display: none;
+  }
+  .screenMobile {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+}
+
+
+/* mobile */
+@media screen and (max-width:425px) {
+  nav {
+    background-color: var(--lightgreen-color);
+    height: 40px;
+  }
+  .screenMax {
+    display: none;
+  }
+  .screenMobile {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  /*.mobile-show {
+    display: block;
+  }
+  article {
+    width: 150px;
+  }*/
+}
+
+/*creditos: <a href='https://www.freepik.es/psd-gratis/vista-de-cerca-de-mockup-de-fitness-con-portapapeles_1551373.htm#'>Psd de Maqueta creado por freepik</a>*/
